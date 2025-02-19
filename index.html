@@ -16,6 +16,10 @@
             font-family: "Noto Sans TC", serif;
             font-weight:200;
         }
+        picture,audio,video {
+            display: block;
+            margin: 1em 0;
+        }
         
     </style>
 </head>
@@ -63,19 +67,10 @@
         <h1>HTML 標籤完整介紹<span>這是H1一級標題一頁只能有一個</span></h1>
         <section id="section1">
             <h2>HTML 基礎標籤</h2>
-            <header>
-                <h1>&lt;header&gt; 網頁標題</h1>
-                <nav>&lt;nav&gt; 導覽列</nav>
-            </header>
-            <article>
-                <h1>&lt;article&gt; 文章標題</h1>
-                <section>&lt;section&gt; 節區標題</section>
-                <aside>&lt;aside&gt; 側邊欄</aside>
-                <footer>&lt;footer&gt; 頁尾</footer>
-            </article>
-            <div><a href="https://ics.wp.shu.edu.tw/">這是超連結連到資傳系網站</a></div>
-            <div><a href="https://ics.wp.shu.edu.tw/" target="_blank">這是超連結連到資傳系網站，加上 target=&quot;_blank&quot;
-                就可以另開新視窗/頁籤</a></div>
+            
+            <div>&lt;a href=&quot;https://ics.wp.shu.edu.tw/&quot;&gt;<a href="https://ics.wp.shu.edu.tw/">這是超連結連到資傳系網站</a>&lt;/a&gt;</div>
+            <div>&lt;a href=&quot;https://ics.wp.shu.edu.tw/&quot; target=&quot;_blank&quot;&gt;<a href="https://ics.wp.shu.edu.tw/" target="_blank">這是超連結連到資傳系網站，加上 target=&quot;_blank&quot;
+                就可以另開新視窗/頁籤</a>&lt;/a&gt;</div>
             <div><a href="image.jpg">連向<img src="image.jpg" alt="圖片"></a></div>
             <div><a href="image.jpg" download>連向<img src="image.jpg" alt="圖片">加上&quot;download&quot;就可以直接下載</a></div>
             <figure>
@@ -88,23 +83,21 @@
             </details>
             <progress value="50" max="100">&lt;progress&gt;</progress>
             <meter value="70" min="0" max="100">&lt;meter&gt; 70%</meter>
+            <hr>
             <section id="text">
-                <h2>文字內容標籤</h2>
-                <h3>標題標籤</h3>
-                <h1>&lt;h1&gt;</h1>
+                <div>標題標籤</div>
                 <h2>&lt;h2&gt;</h2>
                 <h3>&lt;h3&gt;</h3>
                 <h4>&lt;h4&gt;</h4>
                 <h5>&lt;h5&gt;</h5>
                 <h6>&lt;h6&gt;</h6>
-
                 <h3>其他文字標籤</h3>
                 <p>&lt;p&gt; 段落</p>
                 <b>&lt;b&gt; 加粗文字</b><mark>（不建議使用）</mark><br>
-                <i>&lt;i&gt; 斜體文字</i><mark>（不建議使用）</mark><br>
-                <u>&lt;u&gt; 底線文字</u><br>
                 <strong>&lt;strong&gt; 強調文字</strong><br>
+                <i>&lt;i&gt; 斜體文字</i><mark>（不建議使用）</mark><br>
                 <em>&lt;em&gt; 重音文字</em><br>
+                <u>&lt;u&gt; 底線文字</u><br>
                 <mark>&lt;mark&gt; 標記文字</mark><br>
                 <small>&lt;small&gt; 小字</small><br>
                 <del>&lt;del&gt; 刪除線文字</del><br>
@@ -122,7 +115,7 @@
                 &lt;sub&gt;下標：H<sub>2</sub>O<br>
                 &lt;kbd&gt;鍵盤<kbd>⌘/command</kbd>+<kbd>space</kbd><br>
                 &lt;var&gt;變數<var>x</var> + <var>y</var> = <var>z</var><br>
-                &lt;wbr&gt;換行，<p>abcdefghijk<wbr>lmnopqrstuvwxyz</p>
+                &lt;wbr&gt;換行，<p>Taumatawhakatangihanga<wbr>koauauotamateapokaiwhenuakitanatahu</p><cite>它是紐西蘭（New Zealand）境內的一座山。</cite>
                 <blockquote>&lt;blockquote&gt; 長引用
                     <cite>&lt;cite&gt; 引用來源</cite>
                 </blockquote>
@@ -135,7 +128,18 @@
                 &lt;marquee&gt;跑馬燈效果
                 <marquee>顯示內容</marquee>
             </section>
-
+            <div>
+                <div>語意標籤</div>
+                <ul>
+                    <li>&lt;header&gt; 網頁標題</li>
+                    <li>&lt;nav&gt; 導覽列</li>
+                    <li>&lt;article&gt; 文章標題</li>
+                    <li>&lt;section&gt; 節區標題</li>
+                    <li>&lt;aside&gt; 側邊欄</li>
+                    <li>&lt;footer&gt; 頁尾</li>
+                    <li>&lt;main&gt; 主要內容</li>
+                </ul>
+            </div>
             <section id="media">
                 <h2>多媒體標籤</h2>
                 <picture>
