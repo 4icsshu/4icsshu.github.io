@@ -7,6 +7,14 @@
     <meta name="description" content="一篇包含所有 HTML5 標籤的範例頁面">
     <title>HTML 標籤介紹</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            line-height: 1.5;;
+        }
+    </style>
 </head>
 
 <body>
@@ -48,6 +56,7 @@
         </ol>
     </div>
     <main>
+        <div>&lt;main&gt; 主要內容</div>
         <h1>HTML 標籤完整介紹<span>這是H1一級標題一頁只能有一個</span></h1>
         <section id="section1">
             <h2>HTML 基礎標籤</h2>
@@ -61,12 +70,11 @@
                 <aside>&lt;aside&gt; 側邊欄</aside>
                 <footer>&lt;footer&gt; 頁尾</footer>
             </article>
-            <main>&lt;main&gt; 主要內容</main>
-            <a href="https://ics.wp.shu.edu.tw/">這是超連結連到資傳系網站</a>
-            <a href="https://ics.wp.shu.edu.tw/" target="_blank">這是超連結連到資傳系網站，加上 target=&quot;_blank&quot;
-                就可以另開新視窗/頁籤</a>
-            <a href="image.jpg">連向<img src="image.jpg" alt="圖片"></a>
-            <a href="image.jpg" download>連向<img src="image.jpg" alt="圖片">加上&quot;download&quot;就可以直接下載</a>
+            <div><a href="https://ics.wp.shu.edu.tw/">這是超連結連到資傳系網站</a></div>
+            <div><a href="https://ics.wp.shu.edu.tw/" target="_blank">這是超連結連到資傳系網站，加上 target=&quot;_blank&quot;
+                就可以另開新視窗/頁籤</a></div>
+            <div><a href="image.jpg">連向<img src="image.jpg" alt="圖片"></a></div>
+            <div><a href="image.jpg" download>連向<img src="image.jpg" alt="圖片">加上&quot;download&quot;就可以直接下載</a></div>
             <figure>
                 <img src="image.jpg" alt="圖片">
                 <figcaption>&lt;figcaption&gt; 圖片說明</figcaption>
@@ -99,13 +107,19 @@
                 <del>&lt;del&gt; 刪除線文字</del><br>
                 <ins>&lt;ins&gt; 插入文字</ins><br>
                 <abbr title="Hyper Text Markup Language 超文字內容標記語言">&lt;abbr&gt; HTML</abbr><br>
+                &lt;ruby&gt;注音<ruby>漢<rt>ㄏㄢˋ</rt>字<rt>ㄗˋ</rt></ruby><br>
                 <blockquote>&lt;blockquote&gt; 區塊引用</blockquote><br>
                 <cite>&lt;cite&gt; 引用來源</cite><br>
                 <code>&lt;code&gt; 程式碼</code><br>
                 <pre>&lt;pre&gt; 預格式化文字</pre><br>
                 <dfn title="定義術語">&lt;dfn&gt; HTML5</dfn>[罕用]<br>
-                <s>&lt;s&gt; 刪除的內容</s>
-                <q>&lt;q&gt; 短引用</q>
+                <s>&lt;s&gt; 刪除的內容</s><br>
+                <q>&lt;q&gt; 短引用</q><br>
+                &lt;sup&gt;上標：1<sup>st</sup> 2<sup>nd</sup> 3<sup>rd</sup> 4<sup>th</sup> X<sup>2</sup><br>
+                &lt;sub&gt;下標：H<sub>2</sub>O<br>
+                &lt;kbd&gt;鍵盤<kbd>⌘/command</kbd>+<kbd>space</kbd><br>
+                &lt;var&gt;變數<var>x</var> + <var>y</var> = <var>z</var><br>
+                &lt;wbr&gt;換行，<p>abcdefghijk<wbr>lmnopqrstuvwxyz</p>
                 <blockquote>&lt;blockquote&gt; 長引用
                     <cite>&lt;cite&gt; 引用來源</cite>
                 </blockquote>
