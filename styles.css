@@ -37,4 +37,10 @@ div P {color:red;}
 div > p {color:blue}
 
 /*20250311*/
-#section {maring-top:10em;padding:50px;background:pink}
+div + div {margin-bottom:2em;}
+#section {margin-top:50em;padding:50px;background:pink}
+a:link {color:blue;}
+a:visited {color:gray;}
+a:hover {color:white;background:red}
+a:active {color:yellow;}
+a:focus {color:green;}
