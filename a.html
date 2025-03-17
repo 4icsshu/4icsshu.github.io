@@ -4,19 +4,34 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>a 元素</title>
     <style>
-      div {
-        width: 100px;
-        height: 100px;
-        background-color: #f00;
-        color: #fff;
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        border:1px solid blue;}
+      .div div {
+        /*border:1px solid red;*/
         text-align: center;
-        line-height: 100px;
+        line-height: 200px;
+        border:1px dotted blue;
+      }
+      a.div {
+        display:block;
+        color:black;
+        width:200px;
+        height:200px;
+        
+        background-color: #f00;
+        &:hover {
+          background-color: #fff;
+        }
       }
     </style>
   </head>
   <body>
-    <a href="https://ics.wp.shu.edu.tw/"><div>資訊傳播學系</div></a>
+    <a class="div" href="https://ics.wp.shu.edu.tw/"><div>資訊傳播學系</div></a>
+    <a class="div2" href="https://ics.wp.shu.edu.tw/">資訊傳播學系</a>
   </body>
 </html>
