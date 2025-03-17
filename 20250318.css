@@ -1,0 +1,117 @@
+* {
+
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans JP", sans-serif;
+}
+.ibm-plex-sans-jp-regular {
+    font-family: "IBM Plex Sans JP", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+    .ibm-plex-sans-jp-medium {
+        font-family: "IBM Plex Sans JP", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .ibm-plex-sans-jp-semibold {
+        font-family: "IBM Plex Sans JP", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .ibm-plex-sans-jp-bold {
+        font-family: "IBM Plex Sans JP", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }  
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float:right;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: #ccc;
+    }
+}
+.hero {
+    background: transparent fixed url("img2.jpg") no-repeat center center;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height:50vh;
+    display: flex;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 3em;
+    text-align:center;width:100%;
+    
+}
+section {
+    min-height:50vh;
+}
+span {
+    font-size:16px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    /*position:fixed;
+    bottom:0;*/
+    width:100%;
+}
+aside {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    float: right;
+}
+.fixedbackground {
+    background: transparent fixed url('img1.jpg') no-repeat center center;
+    background-size: cover;
+    height:50vh;
+}
+section:has(h2) {
+    color:#333;
+}
+section h2 {
+    margin-bottom: 20px;
+    padding:50px
+}
+.container main{
+    background:#eee;
+    width:100%;
+}
+.link {
+    color: #333;
+    width:200px;
+    height:200px;
+    display:block;
+    text-align:center;
+    line-height:200px;
+    
+    &:hover {
+        color: #ccc;
+        background:red;
+    }
+}
