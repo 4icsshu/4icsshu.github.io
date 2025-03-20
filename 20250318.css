@@ -51,7 +51,8 @@ nav ul li a {
     }
 }
 .hero {
-    background: transparent fixed url("img2.jpg") no-repeat center center;
+    /*background: color image attachment repeat poition / size*/
+    background: transparent url("img2.jpg") fixed no-repeat center center;
     color: white;
     padding: 10px;
     text-align: center;
