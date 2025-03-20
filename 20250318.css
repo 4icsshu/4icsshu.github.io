@@ -29,8 +29,8 @@ body {
 nav {
     background-color: #333;
     color: white;
-    height:5vh;
-    line-height:5vh;
+    height:30px;
+    line-height:30px;
     padding:0 10px;
 }
 nav ul {
@@ -70,6 +70,11 @@ section {
     margin:0;
     padding:0;
 }
+section ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 30px;
+}
 span {
     font-size:16px;
 }
@@ -91,7 +96,7 @@ aside {
     width: 20%;
     position:absolute;
     height:400px;
-    top:560px;
+    top:530px;
     right:0;
 }
 .fixedbackground {
@@ -113,6 +118,11 @@ section h2 {
     /*background: rgba(cc, cc, cc,0.5);*/
     background:#eee;
     border-radius: 20px;
+}
+.container main ol {
+    list-style-type: decimal;
+    margin: 0;
+    padding: 30px;
 }
 section h2,.container main h2 {
     background:#eee;
