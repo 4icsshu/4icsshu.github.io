@@ -1,3 +1,9 @@
+prompt：
+```
+把下面這篇"Review of Knowledge and Knowledge Management Research"主題的文章，翻譯成台灣繁體中文，請一段一段翻譯，盡量在維持原文語意、主題風格的情況下，讓前後文的語句更自然通順，遇到專有名詞時附註英文原文：
+```
+
+文章：
 ```
 Review of Knowledge and Knowledge Management Research
 
