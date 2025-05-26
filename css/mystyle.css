@@ -1,0 +1,10 @@
+:root {
+    --bs-primary-rgb: 0, 175, 181;
+    --bs-link-color: #39A78D;
+    --bs-link-hover-color: #2F8974;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+}
