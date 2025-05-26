@@ -11,6 +11,7 @@ footer {
     height:404px;
     position: absolute;
     bottom:0;
+    padding-left:17rem;
     background:#ccc;
     width:100%;
 }
