@@ -2,14 +2,16 @@ html {
     
 }
 body {
-    min-height:100%;
     padding-bottom: 410px;
     position:relative;
 }
 
 footer {
     height:404px;
-    position: absolute;
-    bottom:0;
+position: absolute;    
     width:100%;
+}
+footer svg {
+
+    bottom:0;
 }
