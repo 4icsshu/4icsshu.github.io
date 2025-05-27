@@ -1,3 +1,6 @@
+:root {
+  --bs-primary-rgb: 178, 150, 125;
+}
 html {
 }
 body {
@@ -5,4 +8,15 @@ body {
 }
 footer {
   margin-bottom: -40px;
+}
+.navbar {
+}
+.navbar-dark {
+}
+:root {
+  --bs-primary-rgb: 178, 150, 125;
+}
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
