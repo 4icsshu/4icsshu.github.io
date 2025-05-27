@@ -4,13 +4,3 @@ body {
   padding-bottom: 410px;
   position: relative;
 }
-
-footer {
-  height: 404px;
-  position: absolute;
-  width: 100%;
-}
-footer svg {
-  width: 100%;
-  bottom: 0;
-}
