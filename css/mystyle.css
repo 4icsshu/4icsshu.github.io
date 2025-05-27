@@ -1,7 +1,7 @@
 :root {
   --bs-primary-rgb: 178, 150, 125;
 }
-
+::-moz-selection,
 ::selection {
   background: #9a785b;
   color: #fff;
