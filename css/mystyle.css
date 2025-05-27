@@ -3,3 +3,6 @@ html {
 body {
   position: relative;
 }
+footer {
+  margin-bottom: -40px;
+}
