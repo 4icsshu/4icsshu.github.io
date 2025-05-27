@@ -1,6 +1,11 @@
 :root {
   --bs-primary-rgb: 178, 150, 125;
 }
+
+::selection {
+  background: #9a785b;
+  color: #fff;
+}
 html {
 }
 body {
