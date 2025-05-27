@@ -71,3 +71,33 @@ h2 {
   border-radius: 20px;
   z-index: 999;
 }
+
+.nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  opacity: 0.4;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover {
+}
+
+.nav-link:hover::after {
+  opacity: 0.9;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
