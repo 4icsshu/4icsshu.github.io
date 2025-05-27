@@ -20,3 +20,29 @@ footer {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
+
+a.callto {
+  display: none;
+}
+@media (orientation: portrait) {
+  a.callto {
+    display: block;
+  }
+  span.callto {
+    display: none;
+  }
+}
+@media (orientation: landscape) {
+  a.callto {
+    display: none;
+  }
+  span.callto {
+    display: inline;
+  }
+}
+
+@media (orientation: portrait) {
+  .noneinportrait {
+    display: none;
+  }
+}
