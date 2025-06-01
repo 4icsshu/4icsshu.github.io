@@ -56,6 +56,63 @@
     </nav>
     <!-- Page Content-->
     <div class="container-fluid p-0">
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57" />
+        <h1 class="display-5 fw-bold">Centered hero</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="video-container mb-4">
+              <video id="videoPlayer" poster="https://via.placeholder.com/800x450.png?text=Video+Poster">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div class="custom-controls">
+                <button class="btn btn-light btn-sm" id="playPauseBtn"><i class="bi bi-play-fill"></i></button>
+                <input type="range" class="form-range" id="progressBar" min="0" max="100" step="1" value="0" />
+                <button class="btn btn-light btn-sm" id="muteBtn"><i class="bi bi-volume-up-fill"></i></button>
+                <button class="btn btn-light btn-sm" id="fullscreenBtn"><i class="bi bi-fullscreen"></i></button>
+              </div>
+            </div>
+            <h2 class="mb-3">Video Title</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc.</p>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="mb-3">Playlist</h3>
+            <ul class="list-group">
+              <li class="list-group-item playlist-item active">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Video 1</h5>
+                  <small>3:45</small>
+                </div>
+                <p class="mb-1">Short description of video 1.</p>
+              </li>
+              <li class="list-group-item playlist-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Video 2</h5>
+                  <small>2:30</small>
+                </div>
+                <p class="mb-1">Short description of video 2.</p>
+              </li>
+              <li class="list-group-item playlist-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Video 3</h5>
+                  <small>4:10</small>
+                </div>
+                <p class="mb-1">Short description of video 3.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <!-- About-->
       <section class="resume-section" id="about">
         <div class="resume-section-content">
@@ -158,21 +215,101 @@
               <span class="text-primary">2015 九月 - 2020 八月</span>
             </div>
           </div>
+          <!-- accordion-->
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">研究所</button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordion Item #2</button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Accordion Item #3</button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <div class="card" style="width: 18rem">
+                  <img src="https://placehold.co/600x400" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img src="https://placehold.co/600x400" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img src="https://placehold.co/600x400" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <hr class="m-0" />
       <!-- Skills-->
       <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-          <h2 class="mb-5">技能</h2>
-          <div class="subheading mb-3">Programming Languages</div>
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-            <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-            <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-            <li class="list-inline-item"><i class="fab fa-markdown"></i></li>
-            <!-- -->
-          </ul>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="resume-section-content">
+            <h2 class="mb-5">技能</h2>
+            <div class="subheading mb-3">Programming Languages</div>
+            <ul class="list-inline dev-icons">
+              <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+              <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+              <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+              <li class="list-inline-item"><i class="fab fa-markdown"></i></li>
+              <!-- -->
+            </ul>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://placehold.co/600x400.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://placehold.co/600x400/000000/cccccc/png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://placehold.co/600x400.png" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
           <div class="subheading mb-3">Tools</div>
           <ul class="list-inline dev-icons">
             <li class="list-inline-item">
@@ -329,7 +466,7 @@
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                   <div class="card shadow-sm">
-                    <img src="https://placehold.co/600x400" alt="">
+                    <img src="https://placehold.co/600x400" alt="" />
 
                     <div class="card-body">
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -339,7 +476,7 @@
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <img src="https://placehold.co/600x400" alt="">
+                    <img src="https://placehold.co/600x400" alt="" />
 
                     <div class="card-body">
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -349,38 +486,7 @@
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <img src="https://placehold.co/600x400" alt="">
-
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="https://placehold.co/600x400" alt="">
-
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="https://placehold.co/600x400" alt="">
-
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="https://placehold.co/600x400" alt="">
+                    <img src="https://placehold.co/600x400" alt="" />
 
                     <div class="card-body">
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -391,7 +497,8 @@
 
                 <div class="col">
                   <div class="card shadow-sm">
-                    <img src="https://placehold.co/600x400" alt="">
+                    <img src="https://placehold.co/600x400" alt="" />
+
                     <div class="card-body">
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <div class="d-flex justify-content-between align-items-center"></div>
@@ -400,7 +507,8 @@
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <img src="https://images.pexels.com/photos/18558643/pexels-photo-18558643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    <img src="https://placehold.co/600x400" alt="" />
+
                     <div class="card-body">
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <div class="d-flex justify-content-between align-items-center"></div>
@@ -409,7 +517,36 @@
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <img src="https://images.pexels.com/photos/31869325/pexels-photo-31869325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    <img src="https://placehold.co/600x400" alt="" />
+
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="https://placehold.co/600x400" alt="" />
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="https://images.pexels.com/photos/18558643/pexels-photo-18558643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="https://images.pexels.com/photos/31869325/pexels-photo-31869325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
                     <div class="card-body">
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <div class="d-flex justify-content-between align-items-center"></div>
@@ -492,5 +629,49 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script>
+      const video = document.getElementById("videoPlayer");
+      const playPauseBtn = document.getElementById("playPauseBtn");
+      const progressBar = document.getElementById("progressBar");
+      const muteBtn = document.getElementById("muteBtn");
+      const fullscreenBtn = document.getElementById("fullscreenBtn");
+
+      playPauseBtn.addEventListener("click", () => {
+        if (video.paused) {
+          video.play();
+          playPauseBtn.innerHTML = '<i class="bi bi-pause-fill"></i>';
+        } else {
+          video.pause();
+          playPauseBtn.innerHTML = '<i class="bi bi-play-fill"></i>';
+        }
+      });
+
+      video.addEventListener("timeupdate", () => {
+        const progress = (video.currentTime / video.duration) * 100;
+        progressBar.value = progress;
+      });
+
+      progressBar.addEventListener("input", () => {
+        const time = (progressBar.value / 100) * video.duration;
+        video.currentTime = time;
+      });
+
+      muteBtn.addEventListener("click", () => {
+        video.muted = !video.muted;
+        muteBtn.innerHTML = video.muted ? '<i class="bi bi-volume-mute-fill"></i>' : '<i class="bi bi-volume-up-fill"></i>';
+      });
+
+      fullscreenBtn.addEventListener("click", () => {
+        if (video.requestFullscreen) {
+          video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) {
+          video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) {
+          video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) {
+          video.msRequestFullscreen();
+        }
+      });
+    </script>
   </body>
 </html>
